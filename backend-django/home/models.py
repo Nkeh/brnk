@@ -18,7 +18,7 @@ class Event(models.Model):
     name = models.CharField(max_length=300)
     description = models.TextField()
     date = models.DateField()
-    location = models.CharField()
+    location = models.CharField(max_length=300)
     attended = models.BooleanField(default=False)
     review = models.TextField()
 
@@ -26,7 +26,7 @@ class Event(models.Model):
         return self.name
     
 
-class ContactMessage():
+class ContactMessage(models.Model):
     name = models.CharField(max_length=250)
     email = models.EmailField()
     message = models.TextField()
