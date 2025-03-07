@@ -20,7 +20,7 @@ class Event(models.Model):
     date = models.DateField()
     location = models.CharField(max_length=300)
     attended = models.BooleanField(default=False)
-    review = models.TextField()
+    review = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.name

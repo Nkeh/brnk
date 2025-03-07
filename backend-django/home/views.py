@@ -15,8 +15,8 @@ def project_list(request):
 
 @api_view(['GET'])
 def event_list(request):
-    events = Project.objects.all()
-    serializer = ProjectSerializer(events, many=True)
+    events = Event.objects.all()
+    serializer = EventSerializer(events, many=True)
     return Response(serializer.data)
 
 
