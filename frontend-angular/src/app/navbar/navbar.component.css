@@ -7,15 +7,15 @@
     padding: 10px 20px;
     color: white;
     min-height: 35px;
-  }
-  
-  /* Logo */
-  .navbar .logo {
+}
+
+/* Logo */
+.navbar .logo {
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .navbar ul {
+}
+
+.navbar ul {
     list-style: none;
     display: flex;
     justify-content: center; /* Center the links */
@@ -24,57 +24,56 @@
     flex-grow: 1; /* Makes it take up available space */
     padding: 0;
     margin: 0;
-  }
-  
-  /* Navbar Links */
-  .navbar ul li {
+}
+
+/* Navbar Links */
+.navbar ul li {
     display: inline-block;
-  }
-  
-  .navbar ul li a {
+}
+
+.navbar ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 10px;
-  }
-  
-  /* Menu Button (Hidden by Default) */
-  .menu-toggle {
+}
+
+/* Menu Button (Hidden by Default) */
+.menu-toggle {
     display: none;
     background: none;
     border: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 700px) {
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
     .navbar {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-  
+
     .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 20px; /* Align to the right */
+        display: block;
+        position: absolute;
+        right: 20px; /* Align to the right */
     }
-  
+
     /* Hide Menu Initially */
     .navbar ul {
-      display: none;
-      flex-direction: column;
-      background: #000;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 200px;
-      padding: 10px;
-      border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
     }
-  
+
     /* Show Menu when "show" class is active */
     .navbar ul.show {
-      display: flex;
+        display: flex;
     }
-  }
-  
+}
