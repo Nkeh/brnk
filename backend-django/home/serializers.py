@@ -17,4 +17,4 @@ class ContactMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactMessage
         fields = '__all__'
-        readonly_fields = ['created_at']
+        read_only_fields = ['created_at']
