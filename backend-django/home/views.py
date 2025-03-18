@@ -23,7 +23,7 @@ def event_list(request):
     return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['POST', 'OPTIONS'])
 def contact_form(request):
     serializer = ContactMessageSerializer(data=request.data)
     if serializer.is_valid():
