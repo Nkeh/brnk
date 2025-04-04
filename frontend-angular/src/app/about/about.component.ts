@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { services, skills } from './about-data';
+
 
 @Component({
   selector: 'app-about',
@@ -20,4 +22,9 @@ export class AboutComponent {
   Whether it’s software, AI, or hardware, 
   I love solving problems and building cool stuff. 
   Let’s connect and create something amazing!`
+
+  skills = skills;
+  services = services;
+
+  
 }

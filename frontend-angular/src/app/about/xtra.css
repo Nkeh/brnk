@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.about-section-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-section-1 .abt-elm {
+    height: 60vh;
+    width: 40vw;
+}
+
+.about-section-1 .abt-elm img {
+    align-self: flex-start;
+    width: 100%;
+    height: 60vh;
+}
+
+.about-section-1 .abt-elm p {
+    color: white;
+}
+h3{
+    color: gray;
+}
+
+p {
+    color: white;
+}
+
+.about-section-2 {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10 px;
+    justify-content: space-evenly;
+}
+
+.about-section-2 ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column size */
+    gap: 20px; /* Space between grid items */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.about-section-2 ul li {
+    background-color: #1a1a1a; /* Dark background for each card */
+    color: white; /* Text color */
+    padding: 20px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center; /* Center-align text */
+}
+
+.about-section-2 ul li h3 {
+    color: #c7ff00; /* Highlighted color for titles */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.about-section-2 ul li p {
+    color: #ccc; /* Lighter text color for descriptions */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+/* .about-section-2 ul li a {
+    color: #c7ff00; 
+    text-decoration: none; 
+    font-weight: bold; 
+
+.about-section-2 ul li a:hover {
+    text-decoration: underline; 
+} */
+
+@media (max-width: 700px) {
+    .about-section-1 {
+        display: grid;
+        height: 150vh;
+        padding-top: 20px;
+        
+    }
+    .about-section-1 .abt-elm {
+        width: 90vw;
+        height: 70vh;
+
+    }
+    .about-section-1 .abt-elm img {
+        width: 90%;
+        height: 40vh;
+    }
+}
+
+
+
+
+.about-section-1 .abt-elm {
+    flex: 1;
+    max-width: 400px; /* Limit the width of each element */
+}
+
+.about-section-1 .abt-elm img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-section-1 .abt-elm h2 {
+    font-size: 1.8rem;
+    color: #c7ff00;
+    margin-bottom: 15px;
+}
+
+.about-section-1 .abt-elm p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 15px;
+}

@@ -1,11 +1,25 @@
-<div class="about-section">
+<h1 class="section-title">About</h1>
+<div class="about-section-1">
     <div class="abt-elm">
         <img src="/assets/images/half_card.jpg" alt="profile-image">
     </div>
     <div class="abt-elm">
-        <h3>About Me</h3>
-        
+        <h2>About Me</h2>
         <p>{{about_text}}</p>
         <p>{{aboutText2}}</p>
     </div>
+</div>
+<div class="about-section-2">
+    <div class="abt-elm">
+        <h1>My Skills</h1>
+        <ul>
+            <li *ngFor="let skill of skills">
+                <img src={{skill.image}} alt="skill-image">
+                <h2>{{skill.title}}</h2>
+                <p>{{skill.description}}</p>
+            </li>
+        </ul>
+       
+    </div>
+        
 </div>
