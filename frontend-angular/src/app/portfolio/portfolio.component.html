@@ -1,1 +1,30 @@
-<p>portfolio works!</p>
+<h1 class="section-title">Resume</h1>
+<div class="projects-section">
+  <h2 class="section-sub-title">Education</h2>
+  <div class="education">
+    <div *ngFor="let education of educationList" class="education-card">
+      <h3>{{ education.title }}</h3>
+      <p>{{ education.institution }}</p>
+      <p><i>{{ education.start }}-{{ education.end }}</i></p>
+      <p style="font-size: 20px; color: #c7ff00;">{{ education.grade }}</p>
+    </div>
+    <div *ngIf="educationList.length === 0">
+      <p>No education information available.</p>
+    </div>
+  </div>
+  
+  
+</div>
+
+<div class="projects-section">
+  <h2 class="section-sub-title">Projects</h2>
+  <div class="projects-grid">
+    <div *ngFor="let project of projects" class="project-card">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+    </div>
+    <div *ngIf="projects.length === 0">
+      <p>No projects available.</p>
+    </div>
+  </div>
+</div>

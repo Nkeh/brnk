@@ -1,10 +1,11 @@
 export interface ProjectInterface {
     id: number,
     title: string,
-    descriptiom: string,
+    description: string,
     technologies: string,
-    githublink: string,
+    github_link: string,
     live_demo: string,
+    date_created: Date
 
 
 }

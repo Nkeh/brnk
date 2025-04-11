@@ -1,0 +1,65 @@
+.projects-section {
+    margin: 40px 20px ;
+  }
+
+
+  .section-sub-title {
+    text-align: left;
+    font-size: 1.5rem;
+    color: gray; /* Highlighted color for the title */
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.eduaction-section {
+    margin: 50px 20px 50px 20px; /* Dark background */
+    color: white;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+   
+}
+.education-card {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c7ff00; /* Highlighted color for the title */
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    color: #c7ff00;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }

@@ -7,6 +7,8 @@
     padding: 10px 20px;
     color: white;
     min-height: 35px;
+    position-anchor: fixed;
+    top: 0; /* Fix the navbar to the top */
 }
 
 /* Logo */
